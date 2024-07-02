@@ -1,4 +1,6 @@
-	SHOW TABLES
+/*atividade 1*/
+
+SHOW TABLES
 SELECT * FROM
  
 CREATE TABLE recepcionista(
@@ -76,6 +78,9 @@ ALTER TABLE paciente
 MODIFY COLUMN estado CHAR(2) NOT NULL;
 SELECT * FROM recepcionista
 SELECT * FROM paciente
+
+/*atividade 2*/
+
 /*1.Inserir de forma implícita 8 pacientes*/
 INSERT INTO paciente 
 VALUES (10,'Donald','12345678901','11234456789','1604-04-21 12:16','donaldGames@gmail.com','Rua GamesBrazil','20','Apto','Santos','11000245','ta meio triste','SP'),
@@ -211,6 +216,8 @@ SELECT nome, logradouro, numero, cidade
 FROM paciente
 WHERE logradouro LIKE '%casa%'
 ORDER BY nome;
+
+/*atividade 3*/
 
 /*1.Buscar nome do médico, nome da especialidade, e crm de todos os médicos cuja especialidade 
 seja “Cardiologista”.*/ 
@@ -368,7 +375,4 @@ JOIN medico m ON c.idMedico = m.idMedico
 JOIN especialidade e ON m.IdEspecialidade = e.idEspecialidade
 GROUP BY e.nomeEspecialidade;
 
-
-
-
-
+/*atividade 4*/
